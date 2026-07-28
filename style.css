@@ -28,26 +28,30 @@ body {
 
 /* Header Styling */
 .eureka-header {
-    background: linear-gradient(to bottom, rgba(11, 15, 25, 0.9), rgba(11, 15, 25, 0.7));
-    backdrop-filter: blur(12px);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    padding: 16px;
+    display: flex;
+    justify-content: center;   /* Centers the text horizontally */
+    align-items: center;       /* Centers the text vertically */
     text-align: center;
-    border-bottom: 1px solid var(--card-border);
+    padding: 12px 20px;        /* Decreased padding to make it sleek */
+    
+    /* Shaping the header with a glowing glassmorphism look */
+    background: rgba(11, 15, 25, 0.7);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid var(--accent-glow, #00f2fe);
+    box-shadow: 0 4px 20px rgba(0, 242, 254, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .eureka-header h1 {
-    font-size: 1.8rem;
-    font-weight: 800;
+    margin: 0;
+    text-align: center;
+    font-size: 1.6rem;
+    letter-spacing: 3px;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    background: linear-gradient(45deg, var(--accent-glow), var(--accent-purple), var(--neon-pink));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 20px rgba(0, 242, 254, 0.2);
+    color: #fff;
+    text-shadow: 0 0 10px var(--accent-glow, #00f2fe), 0 0 20px var(--accent-purple, #9d4edd);
 }
 
 /* Feed Container Layout */
@@ -221,4 +225,50 @@ body {
     .kuestion-card {
         min-height: 500px;
     }
+}
+
+/* --- Bookmark Cyberpunk Interaction Styles --- */
+.bookmark-btn {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.bookmark-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.6);
+    stroke-width: 2;
+    transition: all 0.3s ease;
+}
+
+/* Hover effects */
+.bookmark-btn:hover {
+    background: rgba(0, 242, 254, 0.1);
+    border-color: var(--accent-glow);
+    box-shadow: 0 0 10px rgba(0, 242, 254, 0.3);
+}
+
+.bookmark-btn:hover svg {
+    stroke: var(--accent-glow);
+}
+
+/* Clicked / Active State */
+.bookmark-btn.active {
+    background: rgba(255, 0, 127, 0.15);
+    border-color: var(--neon-pink);
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.5);
+}
+
+.bookmark-btn.active svg {
+    fill: var(--neon-pink);
+    stroke: var(--neon-pink);
 }
