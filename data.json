@@ -1,0 +1,602 @@
+[
+    {
+        "id": 1,
+        "question": "Why is space completely dark if it's full of billions of glowing stars?",
+        "answer": "This is known as Olbers' Paradox! The universe is expanding, causing light from distant stars to stretch into wavelengths humans can't see (infrared). Plus, the universe isn't infinitely old, so light from the most distant stars hasn't reached us yet!",
+        "category": "Astrophysics"
+    },
+    {
+        "id": 2,
+        "question": "What would actually happen to you if you fell into a black hole?",
+        "answer": "You would experience 'Spaghettification'! Because gravity is exponentially stronger at your feet than your head, your body would be stretched vertically and compressed horizontally into a long, noodle-like strand.",
+        "category": "Astrophysics"
+    },
+    {
+        "id": 3,
+        "question": "Can light actually bend, or does it only travel in straight lines?",
+        "answer": "Light travels in straight lines through spacetime, but gravity can warp spacetime itself! Massive objects like galaxies bend the fabric of space, causing passing light to follow a curved path. This is called Gravitational Lensing.",
+        "category": "Relativity"
+    },
+    {
+        "id": 4,
+        "question": "Why does ice float on water when almost all other solids sink in their liquids?",
+        "answer": "Water is weird! When it freezes, its molecules form a crystalline structure held together by hydrogen bonds that actually pushes the molecules further apart, making ice less dense than liquid water.",
+        "category": "Thermodynamics"
+    },
+    {
+        "id": 5,
+        "question": "If nothing can travel faster than light, how fast is the universe expanding?",
+        "answer": "The universe is expanding faster than the speed of light! The rule that 'nothing travels faster than light' only applies to objects moving *through* space. Space itself can expand at any speed it wants!",
+        "category": "Cosmology"
+    },
+    {
+        "id": 6,
+        "question": "Can you actually hear an explosion in outer space?",
+        "answer": "Nope! Sound is a mechanical wave that needs a medium (like air or water) to vibrate through. Since space is a vacuum with no air molecules, it is completely silent. Hollywood movies lie to us!",
+        "category": "Waves & Sound"
+    },
+    {
+        "id": 7,
+        "question": "Why is the sky blue during the day but turns vibrant red at sunset?",
+        "answer": "It's due to Rayleigh Scattering! Earth's atmosphere scatters shorter wavelengths of light (blue) more than others. At sunset, sunlight passes through much more atmosphere, scattering away the blue and leaving the reds and oranges.",
+        "category": "Optics"
+    },
+    {
+        "id": 8,
+        "question": "What is Quantum Entanglement in a simple way?",
+        "answer": "Einstein called it 'spooky action at a distance.' Two particles become linked so that changing the state of one instantly changes the other, no matter how far apart they are—even across the universe!",
+        "category": "Quantum Physics"
+    },
+    {
+        "id": 9,
+        "question": "Why do boomerangs actually come back to the person who threw them?",
+        "answer": "It's a mix of aerodynamics and Gyroscopic Precession. The curved wings create lift, but because the top wing moves faster through the air than the bottom wing, it creates an unbalanced force that turns the boomerang in a circle.",
+        "category": "Mechanics"
+    },
+    {
+        "id": 10,
+        "question": "Can a single particle really exist in two places at the same time?",
+        "answer": "Yes! In quantum mechanics, particles exist in a 'superposition' of states and locations until they are measured or observed, at which point they choose a single reality.",
+        "category": "Quantum Physics"
+    },
+    {
+        "id": 11,
+        "question": "What exactly is Dark Matter, and why can't we see it?",
+        "answer": "Dark matter makes up about 85% of the universe's mass, but it doesn't interact with light or electromagnetic radiation at all. We only know it exists because its massive gravity pulls on visible galaxies!",
+        "category": "Cosmology"
+    },
+    {
+        "id": 12,
+        "question": "Why does time slow down the faster you move through space?",
+        "answer": "This is Time Dilation from Einstein's Relativity. Space and time are woven together as 'spacetime'. The more you allocate your motion to moving through space, the less motion is left for moving through time!",
+        "category": "Relativity"
+    },
+    {
+        "id": 13,
+        "question": "Is glass secretly a very slow-flowing liquid or a true solid?",
+        "answer": "Neither! Glass is an 'amorphous solid.' Its atoms are locked into a solid structure but are arranged randomly like a liquid rather than a neat crystal lattice. It does NOT flow over time.",
+        "category": "Materials Science"
+    },
+    {
+        "id": 14,
+        "question": "How do permanent magnets keep their magnetic power forever without a battery?",
+        "answer": "Magnetism comes from the quantum spin of electrons. In permanent magnets, the spins of millions of electrons are permanently aligned in the same direction, creating a continuous magnetic field naturally.",
+        "category": "Electromagnetism"
+    },
+    {
+        "id": 15,
+        "question": "What happens at Absolute Zero, and can we ever achieve it?",
+        "answer": "Absolute Zero (-273.15°C) is the temperature where all classical atomic motion stops completely. However, due to quantum mechanics (Heisenberg's Uncertainty Principle), atoms will always retain a tiny bit of zero-point energy, making it impossible to reach perfectly.",
+        "category": "Thermodynamics"
+    },
+    {
+        "id": 16,
+        "question": "How does a heavy airplane stay up in the air without falling?",
+        "answer": "Airplanes use lift generated by their wings. The wing's shape and angle force air downwards, and by Newton's Third Law (action-reaction), the air pushes the wing upwards. Dynamic air pressure differences also contribute!",
+        "category": "Fluid Dynamics"
+    },
+    {
+        "id": 17,
+        "question": "What would happen if Earth stopped spinning for just one second?",
+        "answer": "Complete chaos! While the ground would stop, the atmosphere and everything on the surface would keep moving at the spin speed (up to 1,000 mph at the equator), instantly launching buildings, rocks, and oceans sideways.",
+        "category": "Mechanics"
+    },
+    {
+        "id": 18,
+        "question": "Can we see a single atom using a normal light microscope?",
+        "answer": "No. Atoms are smaller than the wavelength of visible light. Light waves just pass right over them without bouncing back. To see atoms, we must use Electron Microscopes which use much smaller electron waves.",
+        "category": "Optics & Quantum"
+    },
+    {
+        "id": 19,
+        "question": "Why does lightning look zig-zagged instead of coming down in a straight line?",
+        "answer": "Electricity looks for the path of least resistance. The air isn't uniform; it has pockets of different humidity, temperature, and ionization. The lightning 'feels' its way down through the easiest pockets, creating steps.",
+        "category": "Electricity"
+    },
+    {
+        "id": 20,
+        "question": "Why are rainbows always shaped like a perfect semi-circle bow?",
+        "answer": "Rainbows are actually full circles! You only see a semi-circle because the ground blocks the bottom half. Light reflects inside water droplets at a very specific angle (around 42 degrees) relative to your eyes.",
+        "category": "Optics"
+    },
+    {
+        "id": 21,
+        "question": "What is the true meaning behind Schrödinger's Cat?",
+        "answer": "It was originally a thought experiment to show how absurd quantum mechanics seems! It states a cat in a box could be both alive and dead at the same time until someone opens the box and forces nature to choose.",
+        "category": "Quantum Physics"
+    },
+    {
+        "id": 22,
+        "question": "How does your phone's GPS use Einstein's theory of relativity?",
+        "answer": "Satellites experience less gravity and move fast, causing their atomic clocks to run faster than clocks on Earth by about 38 microseconds a day. Without relativity math to correct this, your GPS map would be off by miles within a day!",
+        "category": "Relativity"
+    },
+    {
+        "id": 23,
+        "question": "Why do heavy and light objects fall at the same speed in a vacuum?",
+        "answer": "A heavier object has more gravitational pull, but it also has more inertia (resistance to moving). These two effects cancel out perfectly, making everything accelerate at exactly 9.8 m/s² on Earth when air resistance is gone.",
+        "category": "Mechanics"
+    },
+    {
+        "id": 24,
+        "question": "What causes a Sonic Boom when a jet goes supersonic?",
+        "answer": "When a jet travels faster than the speed of sound, it outruns the sound waves it creates. The sound waves pile up behind each other, forming a massive, single shockwave cone that sounds like a massive explosion.",
+        "category": "Waves & Sound"
+    },
+    {
+        "id": 25,
+        "question": "Can you trap light inside a box lined with perfect mirrors forever?",
+        "answer": "In theory, yes. In reality, no mirror is 100% reflective; even the best mirrors absorb a tiny fraction of light. Because light travels so fast, it would hit the walls billions of times in a millisecond and be absorbed instantly.",
+        "category": "Optics"
+    },
+    {
+        "id": 26,
+        "question": "Why do clouds look super fluffy and white if they contain tons of heavy water?",
+        "answer": "Clouds are made of tiny water droplets. These droplets are perfectly sized to scatter all wavelengths of visible light equally. When all colors of light blend together, they form white light!",
+        "category": "Atmospheric Physics"
+    },
+    {
+        "id": 27,
+        "question": "What is the Doppler Effect and how does it affect sound?",
+        "answer": "It's the change in frequency of a wave relative to an observer. When an ambulance drives toward you, its sound waves compress (higher pitch); when it drives away, the waves stretch out (lower pitch).",
+        "category": "Waves & Sound"
+    },
+    {
+        "id": 28,
+        "question": "If the universe is expanding, what exactly is it expanding into?",
+        "answer": "It isn't expanding *into* anything! Space itself is expanding and creating more space between galaxies. The universe is everything that exists, so there is no 'outside' for it to grow into.",
+        "category": "Cosmology"
+    },
+    {
+        "id": 29,
+        "question": "Can hot water really freeze faster than cold water?",
+        "answer": "Yes! This is called the Mpemba Effect. While physicists still debate the exact cause, reasons include faster evaporation cooling the hot water down, and reduced dissolved gases in hot water.",
+        "category": "Thermodynamics"
+    },
+    {
+        "id": 30,
+        "question": "What is a Wormhole, and can we build one?",
+        "answer": "A wormhole is a theoretical tunnel through spacetime connecting two distant points instantly. While mathematically possible in General Relativity, creating one would require 'exotic matter' with negative energy to keep it open.",
+        "category": "Relativity"
+    },
+    {
+        "id": 31,
+        "question": "How do colorful neon lights actually glow?",
+        "answer": "Electricity passes through neon gas, exciting its electrons to higher energy levels. When the electrons fall back down to their natural state, they release that extra energy as photons of bright orange-red light!",
+        "category": "Atomic Physics"
+    },
+    {
+        "id": 32,
+        "question": "What is Antimatter and what happens when it touches normal matter?",
+        "answer": "Antimatter particles have the exact same mass as normal matter but opposite electrical charges. When matter and antimatter meet, they destroy each other instantly, converting 100% of their mass into pure, explosive energy!",
+        "category": "Particle Physics"
+    },
+    {
+        "id": 33,
+        "question": "Why do stars twinkle in the night sky but planets do not?",
+        "answer": "Stars are so incredibly far away that they appear as single pinpoint sources of light, which easily get bent around by moving layers of Earth's atmosphere. Planets are closer and appear as larger discs, averaging out the distortion.",
+        "category": "Optics & Astronomy"
+    },
+    {
+        "id": 34,
+        "question": "Can humans create a miniature Sun on Earth?",
+        "answer": "Yes! Nuclear Fusion reactors (like Tokamaks) recreate the core of the Sun by heating hydrogen gas to over 100 million degrees Celsius, forcing atoms to fuse and release clean, massive amounts of energy.",
+        "category": "Plasma Physics"
+    },
+    {
+        "id": 35,
+        "question": "What is String Theory in a single sentence?",
+        "answer": "String theory suggests that the fundamental building blocks of the universe aren't zero-dimensional particles, but tiny, vibrating strings of energy operating in 11 dimensions!",
+        "category": "Theoretical Physics"
+    },
+    {
+        "id": 36,
+        "question": "Why does a spinning top stay upright instead of falling over immediately?",
+        "answer": "Conservation of Angular Momentum! The torque created by gravity trying to pull the top over acts perpendicular to its spinning motion, causing it to wobble around in a circle (precess) rather than fall.",
+        "category": "Mechanics"
+    },
+    {
+        "id": 37,
+        "question": "Can you outrun your own reflection if you move at the speed of light?",
+        "answer": "According to Einstein, you can never reach the speed of light if you have mass. But if you were moving near the speed of light, light still leaves your face at the exact speed of light relative to you, so your reflection looks perfectly normal!",
+        "category": "Relativity"
+    },
+    {
+        "id": 38,
+        "question": "What is the Horizon Problem in cosmology?",
+        "answer": "Opposite sides of the universe are too far apart to have ever exchanged light or heat, yet they are at the exact same temperature. Cosmic Inflation theory solves this by saying everything was touched together before space exploded outwards.",
+        "category": "Cosmology"
+    },
+    {
+        "id": 39,
+        "question": "How do wireless chargers transfer energy without any wires?",
+        "answer": "They use Electromagnetic Induction! The charger pad contains a coil that creates a rapidly changing magnetic field. When your phone's internal coil enters this field, it forces electrons to flow, charging the battery.",
+        "category": "Electromagnetism"
+    },
+    {
+        "id": 40,
+        "question": "What is the ultimate fate of our universe according to physics?",
+        "answer": "The leading theory is the 'Big Freeze' or Heat Death. The universe will keep expanding until all stars run out of fuel, black holes evaporate via Hawking radiation, and the universe reaches absolute thermodynamic equilibrium.",
+        "category": "Cosmology"
+    },
+    {
+        "id": 41,
+        "question": "Why do heavy raindrops not crush or kill small flying insects?",
+        "answer": "It's all about low momentum transfer. Because a mosquito has so little mass, a falling raindrop doesn't smash into it; instead, the bug simply hitches a ride inside the drop for a split second and slips out safely!",
+        "category": "Fluid Dynamics"
+    },
+    {
+        "id": 42,
+        "question": "What is the Cosmic Microwave Background (CMB) radiation?",
+        "answer": "It's the literal baby picture of our universe! The CMB is the faint glow of thermal radiation left over from the Big Bang, stretched out over 13.8 billion years into the microwave spectrum.",
+        "category": "Cosmology"
+    },
+    {
+        "id": 43,
+        "question": "Why does a whip make a loud cracking noise when snapped?",
+        "answer": "The tip of a whip actually breaks the sound barrier! As the loop travels down the tapering length of the whip, velocity increases until the tip moves faster than 767 mph, creating a miniature sonic boom.",
+        "category": "Waves & Sound"
+    },
+    {
+        "id": 44,
+        "question": "Why do mirrors flip us horizontally (left to right) but not vertically (up and down)?",
+        "answer": "They actually don't flip left-to-right either! A mirror flips things front-to-back, like a glove turned inside out. It reflects light straight back along the path it came from.",
+        "category": "Optics"
+    },
+    {
+        "id": 45,
+        "question": "What is Hawking Radiation and do black holes shrink?",
+        "answer": "Yes, they do! Stephen Hawking discovered that quantum effects near a black hole's event horizon generate random particle-antiparticle pairs. One falls in, while the other escapes, causing the black hole to slowly lose mass and evaporate.",
+        "category": "Astrophysics"
+    },
+    {
+        "id": 46,
+        "question": "Why is the center of the Earth still intensely hot after 4.5 billion years?",
+        "answer": "Two reasons: residual heat locked away during Earth's violent formation, and ongoing radioactive decay of heavy isotopes like Uranium-238 and Thorium-232 deep inside the core.",
+        "category": "Thermodynamics"
+    },
+    {
+        "id": 47,
+        "question": "Can electric currents flow through a perfect vacuum?",
+        "answer": "Yes! While a vacuum contains no atoms to pass electrons along, an electric field can rip electrons off a metal electrode and shoot them across empty space. This is how old CRT TVs worked.",
+        "category": "Electromagnetism"
+    },
+    {
+        "id": 48,
+        "question": "What is the exact speed of gravity, and how fast does its pull travel?",
+        "answer": "According to General Relativity, gravity travels at exactly the speed of light! If the Sun vanished right now, Earth would continue orbiting empty space for 8 minutes and 20 seconds before flying off.",
+        "category": "Relativity"
+    },
+    {
+        "id": 49,
+        "question": "Why doesn't water fall out of a bucket when you spin it upside down quickly?",
+        "answer": "Inertia is the key! The water wants to fly off in a straight line tangent to the circle, but the bottom of the bucket constantly pushes it inward. This outward feeling is called Centrifugal Force.",
+        "category": "Mechanics"
+    },
+    {
+        "id": 50,
+        "question": "How do active noise-canceling headphones block out background sound?",
+        "answer": "They use Destructive Interference! Microphones on the headphones listen to ambient noise and instantly generate an inverted sound wave ('anti-sound') that perfectly flattens the crests of the incoming noise.",
+        "category": "Waves & Sound"
+    },
+    {
+        "id": 51,
+        "question": "What is the Higgs Boson and why did scientists look for it?",
+        "answer": "Often called the 'God Particle', it is the physical excitation of the Higgs Field. Without this field interacting with elementary particles, nothing in our universe would possess mass—electrons would fly around at light speed!",
+        "category": "Particle Physics"
+    },
+    {
+        "id": 52,
+        "question": "Why does a piece of dry white paper become see-through when wet?",
+        "answer": "Dry paper fibers scatter light in all directions because of air gaps. Water fills those microscopic spaces, matching the refractive index of cellulose fibers so light passes straight through instead of bouncing around.",
+        "category": "Optics"
+    },
+    {
+        "id": 53,
+        "question": "Why do golf balls have dimples instead of a smooth surface?",
+        "answer": "Dimples create a tiny layer of turbulent air right around the ball. This actually reduces aerodynamic drag and forms a smaller low-pressure wake behind it, letting the ball fly twice as far.",
+        "category": "Fluid Dynamics"
+    },
+    {
+        "id": 54,
+        "question": "Is it possible for scientists to freeze light completely in place?",
+        "answer": "Yes! By shooting light into highly cooled clouds of atoms called Bose-Einstein Condensates, physicists have successfully slowed light down from its usual speed to zero, storing it temporarily inside the atomic cloud.",
+        "category": "Optics & Quantum"
+    },
+    {
+        "id": 55,
+        "question": "Why can cats twist around mid-air to always land safely on their feet?",
+        "answer": "Cats exploit the Conservation of Angular Momentum. By tucking their front legs in and extending their back legs, they can twist their upper and lower body segments in opposite directions to flip without pushing off anything.",
+        "category": "Mechanics"
+    },
+    {
+        "id": 56,
+        "question": "What is Solar Wind and is it like wind on Earth?",
+        "answer": "Not at all! Earth's wind is moving gas molecules, but Solar Wind is a raging stream of high-energy charged particles (electrons and protons) ejected from the Sun's upper atmosphere out into space.",
+        "category": "Astrophysics"
+    },
+    {
+        "id": 57,
+        "question": "What is the physical difference between nuclear fission and nuclear fusion?",
+        "answer": "Fission splits a massive, unstable atom (like Uranium) into smaller pieces, while Fusion slams tiny atoms (like Hydrogen) together to form a heavier one. Both unleash massive amounts of raw energy.",
+        "category": "Nuclear Physics"
+    },
+    {
+        "id": 58,
+        "question": "How does a standard thermos keep soup boiling hot for hours?",
+        "answer": "A thermos blocks all three forms of heat transfer. It has a double-walled glass flask with a vacuum vacuum layer inside that completely stops conduction and convection, while silvered walls reflect thermal radiation back inward.",
+        "category": "Thermodynamics"
+    },
+    {
+        "id": 59,
+        "question": "What is the Chandrasekhar Limit in stellar evolution?",
+        "answer": "It is the maximum mathematical mass (about 1.4 times the mass of our Sun) that a stable white dwarf star can hold. Exceed this limit, and the star collapses under its own gravity to become a neutron star or black hole.",
+        "category": "Astrophysics"
+    },
+    {
+        "id": 60,
+        "question": "Why can massive cargo ships made of heavy steel float on water?",
+        "answer": "Archimedes' Principle! Even though steel is dense, ships are mostly hollow. The total volume displaces a massive weight of water equal to or greater than the entire weight of the ship, creating powerful buoyant lift.",
+        "category": "Fluid Dynamics"
+    },
+    {
+        "id": 61,
+        "question": "What is a theoretical White Hole?",
+        "answer": "A white hole is the mathematical opposite of a black hole. While nothing can escape a black hole, nothing can ever enter a white hole. Energy and matter violently spew out from it continuously.",
+        "category": "Cosmology"
+    },
+    {
+        "id": 62,
+        "question": "Why does rubbing a balloon on your hair make it stick to the wall?",
+        "answer": "Static electricity! Rubbing transfers electrons from your hair to the balloon, giving it a negative charge. When brought near a wall, it repels the wall's electrons, creating a localized positive attraction point.",
+        "category": "Electricity"
+    },
+    {
+        "id": 63,
+        "question": "Can you create or find a magnet with only a North pole?",
+        "answer": "No. If you cut a bar magnet exactly in half, you don't get isolated poles; you just get two smaller magnets, each with its own North and South pole. Isolated poles are called Magnetic Monopoles and remain theoretical.",
+        "category": "Electromagnetism"
+    },
+    {
+        "id": 64,
+        "question": "Why does adding road salt melt thick winter ice so quickly?",
+        "answer": "Salt lowers the freezing point of water! When salt dissolves into the thin film of liquid water on top of the ice, it introduces foreign ions that disrupt the water molecules from freezing into a solid crystal lattice.",
+        "category": "Thermodynamics"
+    },
+    {
+        "id": 65,
+        "question": "What is the absolute limit of the smallest size possible, the Planck Length?",
+        "answer": "The Planck Length (around 1.6 x 10^-35 meters) is the smallest meaningful measurement in physics. Below this scale, the classical fabric of spacetime breaks down completely into quantum foam.",
+        "category": "Quantum Physics"
+    },
+    {
+        "id": 66,
+        "question": "What is the physical reality of the Casimir Effect?",
+        "answer": "If you place two uncharged metal plates incredibly close together in a vacuum, quantum vacuum fluctuations create more virtual particles outside the plates than inside, producing a measurable physical force pushing them together!",
+        "category": "Quantum Physics"
+    },
+    {
+        "id": 67,
+        "question": "What is Dark Energy and how does it differ from Dark Matter?",
+        "answer": "Dark matter acts like an invisible gravitational glue holding galaxies together. Dark energy is the opposite—it's a mysterious pressure built into empty space that actively forces the universe to expand faster every day.",
+        "category": "Cosmology"
+    },
+    {
+        "id": 68,
+        "question": "Why does the Moon stay in a stable orbit rather than falling directly into Earth?",
+        "answer": "The Moon actually IS falling toward Earth all the time! However, because it possesses high forward tangential speed, it falls *around* the curve of the Earth, keeping it locked in a perpetual orbital drop.",
+        "category": "Mechanics"
+    },
+    {
+        "id": 69,
+        "question": "What exactly is the Event Horizon of a black hole?",
+        "answer": "It is the ultimate point of no return. Once any object passes this mathematical boundary, the escape velocity required to break free exceeds the speed of light, making escape physically impossible.",
+        "category": "Astrophysics"
+    },
+    {
+        "id": 70,
+        "question": "Why do hot air balloons rise gracefully up into the sky?",
+        "answer": "Thermal expansion! Heating the air inside the balloon causes molecules to bounce around violently and spread apart. This makes the air inside less dense than the cool outside air, generating upward buoyancy.",
+        "category": "Fluid Dynamics"
+    },
+    {
+        "id": 71,
+        "question": "Can sound travel faster through solid steel than through normal air?",
+        "answer": "Yes, much faster! Sound is a mechanical vibration wave. Because the atoms inside solid steel are packed tightly together with rigid bonds, they pass kinetic energy along far quicker than loose air molecules.",
+        "category": "Waves & Sound"
+    },
+    {
+        "id": 72,
+        "question": "What is Superconductivity?",
+        "answer": "It's a state achieved by certain materials cooled to extreme temperatures where electrical resistance drops to exactly zero! Electricity can flow through a superconducting loop forever without losing energy as heat.",
+        "category": "Materials Science"
+    },
+    {
+        "id": 73,
+        "question": "Why does oil sit on top of water instead of mixing with it?",
+        "answer": "It's a mix of density and polarity. Oil molecules are less dense than water, so they rise. Additionally, water molecules are polar and prefer sticking to each other, pushing non-polar oil molecules out of the way.",
+        "category": "Fluid Dynamics"
+    },
+    {
+        "id": 74,
+        "question": "What is a gravitational Singularity?",
+        "answer": "A singularity is a point at the dead center of a black hole where matter is crushed into an infinitely small space, causing density and gravitational curvature to become infinite, breaking our laws of physics.",
+        "category": "Relativity"
+    },
+    {
+        "id": 75,
+        "question": "Can heavy gravity physically warp or alter the passage of time?",
+        "answer": "Yes! This is Gravitational Time Dilation. Massive objects warp the fabric of spacetime. The closer you are to a strong gravitational source (like a black hole or Earth's core), the slower time ticks for you.",
+        "category": "Relativity"
+    },
+    {
+        "id": 76,
+        "question": "What is a Quark?",
+        "answer": "Quarks are fundamental elementary particles that combine to build hadrons, such as protons and neutrons. They are never found alone in nature and carry fractional electric charges like +2/3 or -1/3.",
+        "category": "Particle Physics"
+    },
+    {
+        "id": 77,
+        "question": "What was the Ultraviolet Catastrophe in physics history?",
+        "answer": "It was a major flaw in 19th-century classical physics which predicted that an ideal black body would radiate infinite energy at short wavelengths (ultraviolet). Max Planck solved this by proposing energy comes in packets called 'quanta'.",
+        "category": "Quantum Physics"
+    },
+    {
+        "id": 78,
+        "question": "How do microwave ovens heat up leftover food while leaving plates cold?",
+        "answer": "Microwaves emit electromagnetic waves tuned to vibrate polar molecules, specifically water, fats, and sugars. This rapid oscillation creates friction that heats food instantly, while non-polar ceramic plates remain unaffected.",
+        "category": "Electromagnetism"
+    },
+    {
+        "id": 79,
+        "question": "What is the Coriolis Effect?",
+        "answer": "It's an apparent force caused by Earth's rotation. Because different latitudes spin at different linear speeds, objects traveling long distances straight north or south get deflected sideways, shaping global weather and hurricanes.",
+        "category": "Mechanics"
+    },
+    {
+        "id": 80,
+        "question": "Can two solid objects ever truly touch each other down at the atomic level?",
+        "answer": "No! When you sit on a chair, the electrons in your body's atoms repel the electrons in the chair's atoms via the electromagnetic force. You are technically levitating on an ultra-microscopic electrostatic cushion.",
+        "category": "Quantum Physics"
+    },
+    {
+        "id": 81,
+        "question": "Why does a clear glass prism split white light into a vibrant rainbow?",
+        "answer": "Dispersion! White light contains all colors. When it enters glass at an angle, different wavelengths slow down by different amounts—blue bends sharply, while red bends less, splitting the beam.",
+        "category": "Optics"
+    },
+    {
+        "id": 82,
+        "question": "What is a Cosmic Ray?",
+        "answer": "Cosmic rays aren't beams of light; they are ultra-high-energy subatomic particles (mostly protons) flying through interstellar space near the speed of light, originating from supernovae and distant energetic blazars.",
+        "category": "Astrophysics"
+    },
+    {
+        "id": 83,
+        "question": "Why does blowing gently over hot soup cool it down faster?",
+        "answer": "Evaporative cooling! Energetic water molecules escape the soup as vapor, forming a humid layer above it. Blowing pushes this layer away, allowing more hot molecules to evaporate and carry heat with them.",
+        "category": "Thermodynamics"
+    },
+    {
+        "id": 84,
+        "question": "What is the fundamental difference between mass and weight?",
+        "answer": "Mass is the unchanging measure of how much matter an object contains. Weight is the variable force exerted on that mass by gravity. Your mass stays identical on the Moon, but your weight drops to 1/6th.",
+        "category": "Mechanics"
+    },
+    {
+        "id": 85,
+        "question": "Why don't bicycle riders fall over sideways when moving forward at high speeds?",
+        "answer": "It's a combination of steering geometry and angular momentum. When a bike tilts, the front wheel automatically steers slightly into the fall, creating a centrifugal correction force that pulls the rider upright.",
+        "category": "Mechanics"
+    },
+    {
+        "id": 86,
+        "question": "What is Quantum Tunneling?",
+        "answer": "It's a quantum superpower! A subatomic particle can pass through a seemingly solid energy barrier that it classically shouldn't have enough energy to cross, effectively vanishing on one side and appearing on the other.",
+        "category": "Quantum Physics"
+    },
+    {
+        "id": 87,
+        "question": "Why do high-voltage power lines make a continuous buzzing or humming noise?",
+        "answer": "Corona Discharge! The extreme voltage ionizes air molecules surrounding the wires. This creates small electrical arcs that heat and expand the air, producing a continuous acoustic hum at 50 or 60 Hz.",
+        "category": "Electromagnetism"
+    },
+    {
+        "id": 88,
+        "question": "What is the Big Bounce theory in modern cosmology?",
+        "answer": "It's a cyclical model suggesting our universe didn't start from an absolute nothingness singularity, but rather resulted from the collapse of a previous universe that contracted down and rebounded outwards.",
+        "category": "Cosmology"
+    },
+    {
+        "id": 89,
+        "question": "Why does sound travel faster on a humid rainy day than on a dry clear day?",
+        "answer": "Water vapor molecules are lighter and less dense than standard nitrogen and oxygen molecules. Sound waves travel faster through less dense air, making humid air a quicker medium.",
+        "category": "Waves & Sound"
+    },
+    {
+        "id": 90,
+        "question": "What is the concept of Spacetime?",
+        "answer": "Einstein proved that three-dimensional space and one-dimensional time are not separate structures; they are woven together into a single, continuous four-dimensional fabric that bends in response to mass.",
+        "category": "Relativity"
+    },
+    {
+        "id": 91,
+        "question": "Why do modern fiber-optic cables transmit data using light instead of electricity?",
+        "answer": "Photons don't experience electromagnetic interference like copper wires do. By bouncing light inside pure glass cores via Total Internal Reflection, data travels long distances at light speed with zero degradation.",
+        "category": "Optics"
+    },
+    {
+        "id": 92,
+        "question": "What is Kinetic Friction and how does it stop moving cars?",
+        "answer": "When brake pads clamp onto a spinning rotor, microscopic ridges on the two surfaces collide and shear against each other, converting the car's forward kinetic energy into thermal heat energy.",
+        "category": "Mechanics"
+    },
+    {
+        "id": 93,
+        "question": "What is the physical significance of the Twin Paradox?",
+        "answer": "A thought experiment where one identical twin journeys to space near light speed while the other stays home. Due to Special Relativity's time dilation, the traveling twin returns home significantly younger than the Earth twin.",
+        "category": "Relativity"
+    },
+    {
+        "id": 94,
+        "question": "Why do some metals expand when heated and contract when cooled?",
+        "answer": "Thermal expansion! Adding heat energy causes the metal's internal atoms to vibrate faster and push further apart from their neighbors, increasing the overall volume of the material.",
+        "category": "Thermodynamics"
+    },
+    {
+        "id": 95,
+        "question": "What is a Photon?",
+        "answer": "A photon is an elementary particle that serves as the quantum quantum unit of light and all other forms of electromagnetic radiation. It possesses zero rest mass and travels continuously at light speed.",
+        "category": "Quantum Physics"
+    },
+    {
+        "id": 96,
+        "question": "Why does a hot air balloon stop rising after hitting a certain altitude?",
+        "answer": "Atmospheric density layers! As the balloon rises, the outside air becomes thinner and less dense. It stops ascending once the total weight of the balloon perfectly matches the weight of the displaced air.",
+        "category": "Fluid Dynamics"
+    },
+    {
+        "id": 97,
+        "question": "What is escape velocity?",
+        "answer": "It is the minimum initial speed an unpropelled object requires to break completely free from the gravitational pull of a primary body (like Earth) forever without falling back down.",
+        "category": "Mechanics"
+    },
+    {
+        "id": 98,
+        "question": "Why do diamonds sparkle brighter than normal clear glass objects?",
+        "answer": "Diamonds have an exceptionally high index of refraction and a low critical angle. Light entering a cut diamond undergoes Total Internal Reflection multiple times before escaping, intensifying the sparkle.",
+        "category": "Optics"
+    },
+    {
+        "id": 99,
+        "question": "What is Terminal Velocity?",
+        "answer": "As an object falls, air resistance increases until the upward drag force perfectly balances out the downward pull of gravity. Acceleration hits zero, and the object falls at a constant speed.",
+        "category": "Fluid Dynamics"
+    },
+    {
+        "id": 100,
+        "question": "What is the Fermi Paradox?",
+        "answer": "The mathematical contradiction between the high probability of intelligent extraterrestrial life existing somewhere in our billions-of-years-old universe and the total lack of physical evidence or contact from them.",
+        "category": "Cosmology"
+    }
+]
