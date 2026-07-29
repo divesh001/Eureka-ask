@@ -4,40 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eureka - Ignite Your Physics Curiosity</title>
+    <!-- Link to your external cyberpunk design tokens & styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header Section -->
+    <!-- Shaped & Centered Cyberpunk Header -->
     <header class="eureka-header">
         <h1>Eureka</h1>
     </header>
 
-    <!-- Main Stream/Feed Container -->
-    <main class="feed-container" id="feed-container">
-        <!-- Dynamic Curiosity Cards will be loaded here via JS -->
+    <!-- Main Micro-Content Feed Container -->
+    <main id="feed-container">
+        <!-- 
+          JavaScript (script.js) automatically injects assets here:
+          - Shuffled Kuestion Cards (Home Feed)
+          - Edge-to-edge Satellite imagery (Photos Feed)
+          - Curated user collections (Profile Feed)
+        -->
+        <div style="display:flex; justify-content:center; align-items:center; min-height:60vh; color:var(--accent-glow, #00f2fe);">
+            <p style="letter-spacing:3px; text-transform:uppercase; font-size:0.9rem; font-weight:bold; animate: pulse 1.5s infinite;">
+                Igniting Cosmic Engines...
+            </p>
+        </div>
     </main>
 
-    <!-- Navigation Footer -->
-    <footer class="eureka-footer">
-        <button class="nav-item active" data-target="home" aria-label="Home">
-            <svg viewBox="0 0 24 24" class="nav-icon"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+    <!-- Futuristic Glassmorphic Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+        
+        <!-- Home Button -->
+        <button class="nav-item active" data-target="home" aria-label="Home Feed">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
             <span>Home</span>
         </button>
-        <button class="nav-item" data-target="photos" aria-label="Photos">
-            <svg viewBox="0 0 24 24" class="nav-icon"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+
+        <!-- Photos Button (NASA APOD Feed Hook) -->
+        <button class="nav-item" data-target="photos" aria-label="Space Imagery Feed">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c0-1.1.9-2 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+            </svg>
             <span>Photos</span>
         </button>
-        <button class="nav-item" data-target="camera" aria-label="Camera">
-            <svg viewBox="0 0 24 24" class="nav-icon"><circle cx="12" cy="12" r="3.2"/><path d="M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/></svg>
+
+        <!-- Camera Button (Placeholder Feature) -->
+        <button class="nav-item" data-target="camera" aria-label="Camera Tools">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="3.2"/>
+                <path d="M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/>
+            </svg>
             <span>Camera</span>
         </button>
-        <button class="nav-item" data-target="profile" aria-label="Profile">
-            <svg viewBox="0 0 24 24" class="nav-icon"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5-4-8-4z"/></svg>
+
+        <!-- Profile Button (Bookmarks Vault Hook) -->
+        <button class="nav-item" data-target="profile" aria-label="Curated Saved Vault">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5-4-8-4z"/>
+            </svg>
             <span>Profile</span>
         </button>
-    </footer>
+        
+    </nav>
 
+    <!-- Connect Core Application Engine -->
     <script src="script.js"></script>
 </body>
 </html>

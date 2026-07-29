@@ -1,43 +1,55 @@
-* Global Styling & Reset */
-*, *::before, *::after {
+/* ==========================================================================
+   1. CYBERPUNK DESIGN TOKENS (VARIABLES)
+   ========================================================================== */
+:root {
+    --bg-dark: #0b0f19;
+    --card-blend: rgba(255, 255, 255, 0.04);
+    --card-border: rgba(255, 255, 255, 0.08);
+    
+    /* Neon Emissive Accents */
+    --accent-glow: #00f2fe;    /* Neon Cyan */
+    --accent-purple: #9d4edd;  /* Deep Electric Purple */
+    --neon-pink: #ff007f;      /* Hot Synth Pink */
+    
+    /* Typography Colors */
+    --text-main: #ffffff;
+    --text-muted: #8e9bb0;
+    
+    --font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ==========================================================================
+   2. GLOBAL RESET & BASE STYLES
+   ========================================================================== */
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-:root {
-    --bg-color: #0b0f19;
-    --card-bg: rgba(255, 255, 255, 0.04);
-    --card-border: rgba(255, 255, 255, 0.08);
-    --accent-glow: #00f2fe;
-    --accent-purple: #9d4edd;
-    --text-main: #f8fafc;
-    --text-muted: #94a3b8;
-    --neon-pink: #ff007f;
-}
-
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: var(--bg-color);
+    background-color: var(--bg-dark);
     color: var(--text-main);
-    overflow-x: hidden;
-    height: 100vh;
+    font-family: var(--font-stack);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
-/* Header Styling */
+/* ==========================================================================
+   3. SLEEK & SHAPED HEADER COMPONENT
+   ========================================================================== */
 .eureka-header {
     display: flex;
-    justify-content: center;   /* Centers the text horizontally */
-    align-items: center;       /* Centers the text vertically */
+    justify-content: center;   /* Centers text horizontally */
+    align-items: center;       /* Centers text vertically */
     text-align: center;
-    padding: 12px 20px;        /* Decreased padding to make it sleek */
-    
-    /* Shaping the header with a glowing glassmorphism look */
-    background: rgba(11, 15, 25, 0.7);
-    backdrop-filter: blur(10px);
-    border-bottom: 2px solid var(--accent-glow, #00f2fe);
+    padding: 12px 20px;        /* Decreased padding for a low profile */
+    background: rgba(11, 15, 25, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 2px solid var(--accent-glow);
     box-shadow: 0 4px 20px rgba(0, 242, 254, 0.15);
     position: sticky;
     top: 0;
@@ -46,188 +58,122 @@ body {
 
 .eureka-header h1 {
     margin: 0;
-    text-align: center;
     font-size: 1.6rem;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     text-transform: uppercase;
+    font-weight: 800;
     color: #fff;
-    text-shadow: 0 0 10px var(--accent-glow, #00f2fe), 0 0 20px var(--accent-purple, #9d4edd);
+    text-shadow: 0 0 10px var(--accent-glow), 0 0 20px var(--accent-purple);
 }
 
-/* Feed Container Layout */
-.feed-container {
+/* ==========================================================================
+   4. MAIN CONTENT FEED (TIKTOK/REELS STYLE SCROLL SNAP)
+   ========================================================================== */
+#feed-container {
     flex: 1;
-    margin-top: 68px;
-    margin-bottom: 72px;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
     width: 100%;
-    max-width: 480px;
-    align-self: center;
-    padding: 10px;
-    -webkit-overflow-scrolling: touch;
+    max-width: 500px; /* Constrains layout beautifully on desktop browsers */
+    margin: 0 auto;
+    padding-bottom: 75px; /* Creates breathing room above the navigation bar */
+    scroll-behavior: smooth;
 }
 
-/* Custom Scrollbar hide for full feed experience */
-.feed-container::-webkit-scrollbar {
-    display: none;
-}
-
-/* Curiosity Card Design */
+/* ==========================================================================
+   5. INTERACTIVE KUESTION CARD SYSTEM
+   ========================================================================== */
 .kuestion-card {
-    scroll-snap-align: center;
-    background: var(--card-bg);
+    background: var(--card-blend);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--card-border);
-    backdrop-filter: blur(16px);
-    border-radius: 24px;
-    padding: 30px 24px;
-    margin-bottom: 20px;
-    min-height: calc(100vh - 170px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    padding: 24px;
+    margin: 20px 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+/* Subtle micro-interaction bounce on hover */
 .kuestion-card:hover {
-    border-color: rgba(0, 242, 254, 0.3);
+    transform: scale(1.01);
+    border-color: rgba(0, 242, 254, 0.25);
 }
 
-/* Category Tag */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
 .category-tag {
-    position: absolute;
-    top: 24px;
-    left: 24px;
-    background: linear-gradient(135deg, rgba(0, 242, 254, 0.1), rgba(157, 78, 221, 0.1));
-    border: 1px solid rgba(0, 242, 254, 0.3);
-    color: var(--accent-glow);
-    padding: 6px 14px;
-    border-radius: 50px;
+    background: rgba(157, 78, 221, 0.15);
+    border: 1px solid var(--accent-purple);
+    color: #dfb2ff;
+    padding: 4px 10px;
     font-size: 0.75rem;
-    font-weight: 600;
+    font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
+    border-radius: 6px;
 }
 
-/* Question Content */
 .question-text {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.4;
-    margin-top: 40px;
-    margin-bottom: 30px;
-    background: linear-gradient(to right, #ffffff, #e2e8f0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ffffff;
+    margin-bottom: 20px;
 }
 
-/* Action Button Container */
 .action-box {
-    margin-top: 10px;
+    width: 100%;
 }
 
 .reveal-btn {
-    background: linear-gradient(135deg, var(--accent-glow), var(--accent-purple));
-    color: #ffffff;
-    border: none;
-    padding: 14px 28px;
-    font-size: 1rem;
-    font-weight: 700;
-    border-radius: 50px;
-    cursor: pointer;
     width: 100%;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 242, 254, 0.3);
+    padding: 12px;
+    background: linear-gradient(135deg, var(--accent-glow), var(--accent-purple));
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 242, 254, 0.2);
 }
 
-.reveal-btn:active {
-    transform: scale(0.96);
+.reveal-btn:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 4px 20px rgba(157, 78, 221, 0.4);
 }
 
-/* Answer Smooth Reveal styling */
+/* Accordion Expand Settings */
 .answer-box {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), margin-top 0.3s;
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 16px;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .answer-box.show {
-    max-height: 250px;
-    margin-top: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    max-height: 200px; /* Provides safety ceiling room for longer answers */
 }
 
 .answer-text {
-    padding: 18px;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #cbd5e1;
-    border-left: 3px solid var(--neon-pink);
-}
-
-/* Footer Navigation Layout */
-.eureka-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: linear-gradient(to top, rgba(11, 15, 25, 0.95), rgba(11, 15, 25, 0.8));
-    backdrop-filter: blur(12px);
-    border-top: 1px solid var(--card-border);
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0 14px;
-    z-index: 100;
-}
-
-.nav-item {
-    background: none;
-    border: none;
+    padding-top: 16px;
     color: var(--text-muted);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    font-size: 0.65rem;
-    font-weight: 500;
-    gap: 4px;
-    transition: color 0.3s, transform 0.2s;
-    width: 60px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    border-top: 1px dashed rgba(255, 255, 255, 0.1);
+    margin-top: 16px;
 }
 
-.nav-icon {
-    width: 24px;
-    height: 24px;
-    fill: currentColor;
-    transition: transform 0.3s;
-}
-
-.nav-item:hover, .nav-item.active {
-    color: var(--accent-glow);
-}
-
-.nav-item.active .nav-icon {
-    transform: translateY(-2px);
-    filter: drop-shadow(0 0 6px var(--accent-glow));
-}
-
-/* Responsive Scaling for larger views */
-@media (min-width: 600px) {
-    .feed-container {
-        padding: 20px;
-    }
-    .kuestion-card {
-        min-height: 500px;
-    }
-}
-
-/* --- Bookmark Cyberpunk Interaction Styles --- */
+/* ==========================================================================
+   6. CYBERPUNK BOOKMARK SYSTEM
+   ========================================================================== */
 .bookmark-btn {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -261,7 +207,7 @@ body {
     stroke: var(--accent-glow);
 }
 
-/* Clicked / Active State */
+/* Clicked / Active Saved State */
 .bookmark-btn.active {
     background: rgba(255, 0, 127, 0.15);
     border-color: var(--neon-pink);
@@ -271,4 +217,163 @@ body {
 .bookmark-btn.active svg {
     fill: var(--neon-pink);
     stroke: var(--neon-pink);
+}
+
+/* ==========================================================================
+   7. NASA SATELLITE EDGE-TO-EDGE GALLERY COMPONENT
+   ========================================================================== */
+.nasa-gallery-wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.nasa-photo-block {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid rgba(0, 242, 254, 0.15);
+}
+
+.nasa-img-container {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nasa-img-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 !important; /* Enforces strict zero margin */
+    padding: 0 !important;
+    cursor: pointer;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.nasa-img-container img:hover {
+    transform: scale(1.03); /* Immersive zoom effect */
+}
+
+/* Floating Corner Label */
+.nasa-floating-title {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: rgba(11, 15, 25, 0.8);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(0, 242, 254, 0.3);
+    color: #fff;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    pointer-events: none; /* Let clicks pass directly down to the image target */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Expandable Drawer for Explanation Text */
+.nasa-explanation-drawer {
+    max-height: 0;
+    overflow: hidden;
+    background: rgba(15, 22, 38, 0.95);
+    backdrop-filter: blur(10px);
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-left: 4px solid var(--accent-glow);
+}
+
+.nasa-explanation-drawer.open {
+    max-height: 600px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.nasa-explanation-drawer h3 {
+    margin: 0 0 4px 0;
+    color: #fff;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.nasa-explanation-drawer p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   8. GLASSMORPHIC BOTTOM NAVIGATION BAR
+   ========================================================================== */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px;
+    height: 65px;
+    background: rgba(11, 15, 25, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.nav-item {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 60px;
+    height: 100%;
+    transition: all 0.2s ease;
+    gap: 4px;
+}
+
+.nav-item svg {
+    width: 22px;
+    height: 22px;
+    fill: var(--text-muted);
+    transition: all 0.2s ease;
+}
+
+.nav-item span {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Active State Colors */
+.nav-item.active {
+    color: var(--accent-glow);
+}
+
+.nav-item.active svg {
+    fill: var(--accent-glow);
+    filter: drop-shadow(0 0 6px rgba(0, 242, 254, 0.6));
+}
+
+/* ==========================================================================
+   9. UTILITIES & ANIMATIONS
+   ========================================================================== */
+@keyframes pulse {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; filter: brightness(1.2); }
 }
